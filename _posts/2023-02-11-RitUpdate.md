@@ -7,6 +7,8 @@
   <source src="../assets/ritupdate-holdnotes.mp4" type="video/mp4">
 </video>
 
+Since that video is FUCKED!!!! Here is a link to the videos download url: [https://github.com/GuglioIsStupid/guglioisstupid.github.io/raw/main/assets/ritupdate-holdnotes.mp4](https://github.com/GuglioIsStupid/guglioisstupid.github.io/raw/main/assets/ritupdate-holdnotes.mp4)
+
 I was FINALLY able to understand how to do actual holdnotes, so instead of the UGLY 🤢🤮 hold notes i had before, i have a better improved version now! Check it out! (Or don't, it's not like I care or anything)
 
 #### Code of the blog
