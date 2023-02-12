@@ -4,7 +4,7 @@
 
 <!--Load video from assets/-->
 <video controls>
-  <source src="../assets/ritupdate-holdnotes.mp4" type="video/mp4">
+  <source src="../../../assets/ritupdate-holdnotes.mp4" type="video/mp4">
 </video>
 
 Since that video is FUCKED!!!! Here is a link to the videos download url: [https://github.com/GuglioIsStupid/guglioisstupid.github.io/raw/main/assets/ritupdate-holdnotes.mp4](https://github.com/GuglioIsStupid/guglioisstupid.github.io/raw/main/assets/ritupdate-holdnotes.mp4)
