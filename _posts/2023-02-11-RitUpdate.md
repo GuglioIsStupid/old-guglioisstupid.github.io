@@ -4,7 +4,7 @@
 
 <!--Load video from assets/-->
 <video controls>
-  <source src="assets/ritupdate-holdnotes.mp4" type="video/mp4">
+  <source src="../assets/ritupdate-holdnotes.mp4" type="video/mp4">
 </video>
 
 I was FINALLY able to understand how to do actual holdnotes, so instead of the UGLY 🤢🤮 hold notes i had before, i have a better improved version now! Check it out! (Or don't, it's not like I care or anything)
