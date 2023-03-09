@@ -5,6 +5,7 @@
 <video controls>
     <source src="../../../assets/ritupdate-modscriptingshowcase.mp4" type="video/mp4">
 </video>
+^ Made purely with modscripting!
 
 After some TEDIOUS modifier coding, I have finally successfully made a modscripting system for Rit! This means that you can now make your own mods for Rit! (Or just use the mods I made, but that's not the point of this post). The modscripting system is very simple, and I will explain it in this post.
 
