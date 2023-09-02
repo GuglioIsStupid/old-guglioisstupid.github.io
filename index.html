@@ -10,98 +10,99 @@
 <meta content="About me" name="og:description">
 <meta content="#E084D6" data-react-helmet="true" name="theme-color">
 
-
+<!-- Main page of my personal website -->
 <html>
     <!--get bootstrap-->
     <link
     rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
-
-    <!--Create a nice layout (one page! No nav bar)-->
     
     <!--load index.css-->
-    <link rel="stylesheet" href="index.css">
-    <!--load index.js-->
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles/index.css">
 
     <body>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    <h1>
-                        GuglioIsStupid
-                    </h1>
-                    <h2>Contact Me</h2>
-                    <div id="discord">
-                        <div class="discordInfo">
-                            <h3>Discord</h3>
-                            <p>guglioisstupid</p>
-                            <button onclick="copyDiscord()">Copy</button>
-                        </div>
-                    </div>
-                    <div id="twitter">
-                        <div class="twitterInfo">
-                            <h3>Twitter</h3>
-                            <p>@GuglioIs2Stupid</p>
-                            <button onclick="GoToTwitter()">Go</button>
-                        </div>
-                    </div>
-                    <div id="github">
-                        <div class="githubInfo">
-                            <h3>Github</h3>
-                            <p>GuglioIsStupid</p>
-                            <button onclick="GoToGithub()">Go</button>
-                        </div>
-                    </div>
+                    <h2>Whelcome to <a href="#">ilovefemboys.org</a>!</h2>
+                    <h3>Site by <a href="https://twitter.com/GuglioIs2Stupid">@GuglioIs2Stupid</a> on Twitter</h3>
+
+                    <!--border-->
+                    <hr style="border-top: 2px solid rgb(36, 78, 93);">
                 </div>
             </div>
-        </div>
 
-        <br>
-        <br>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h1>What is this site?</h1>
+                    <p>This site is not what it seems. This is my personal website! No femboy-related content will be found here.</p>
+                    <hr style="border-top: 2px solid rgb(36, 78, 93);">
+                </div>
+            </div>
 
-        <div id="miku">
-            <!-- load https://image.api.playstation.com/cdn/UP0177/CUSA04518_00/SM1XQ1raeyyh0TD39SteKi34Yk6mLIYH.jpg with the holyShitHatsuneMiku class -->
-            <div class = "container">
-                <div class="row">
-                    <div class="col-sm-12 text-center">
-                        <h4>Miku Miku oo ee oo</h4>
+            <!--4 panels-->
+            <div class="row">
+                <div class="col-sm-3 text-center">
+                    <h3>Who am I?</h3>
+                    <p>I am a 17 year old programmer who likes to create games and mods. As you can see, I am not the best at web design!</p>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <h3>What do I do?</h3>
+                    <p>I make games, mods, and discord bots. I also make websites, but I am not very good at it.</p>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <h3>What do I use?</h3>
+                    <p>I use Python, Lua, C#, and <i>very</i> little javascript. I prefer coding with Visual Studio Code but use Visual Studio for C# projects</p>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <h3>Where can you find me?</h3>
+                    <p>You can visit my <a href="pages/contact.html">contact page</a> to find my socials.</p>
+                </div>
+            </div>
+
+            <hr style="border-top: 2px solid rgb(36, 78, 93);">
+
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <div id="cosleftright">
+                        <div id="cosssss">
+                            <h1>Projects</h1>
+                            <p>Here are some of my projects!</p>
+                        </div>
+
                         <script>
-                            // slowly rotate miku.h4 (sinelaw mmmm math 🤤🤤)
+                            // cos project text
                             setInterval(function() {
-                                document.getElementById("miku").style.transform = "rotate(" + Math.sin(Date.now() / 1000) * 10 + "deg)";
+                                var x = Math.cos(new Date().getTime() / 100);
+                                document.getElementById("cosssss").style.transform = "translateX(" + x * 35 + "px)";
                             }, 1);
                         </script>
-                        <img src="https://image.api.playstation.com/cdn/UP0177/CUSA04518_00/SM1XQ1raeyyh0TD39SteKi34Yk6mLIYH.jpg" class="holyShitHatsuneMiku" alt="Holy shit, Hatsune Miku">
                     </div>
+                </div>
+
+                <div class="col-sm-4 text-center">
+                    <h3><a href="https://github.com/AGORI-Studios/Rit" target="_blank">Rit.</a></h3>
+                    <p>Rit. is a rhythm game I am working on. It is currently in early development. The game is supported by multiple systems such is Windows, MacOS, Linux, and Nintendo Switch.</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h3>Guys Vs Gods</h3>
+                    <p>Guys Vs Gods is a game made for <a href="https://agori.dev" target="_blank">AGORI Studios</a>, it is a top-down pixel RPG game</p>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h3><a href="https://github.com/VanillaEngineDevs/Vanilla-Engine" target="_blank">Vanilla Engine</a></h3>
+                    <p>Vanilla Engine is a FNF engine made in Lua built on <a href="https://github.com/HTV04/funkin-rewritten" target="_blank">Funkin' Rewritten</a>. It has recently released.</p>
+                </div>
+            </div>
+
+            <!--border-->
+            <hr style="border-top: 2px solid rgb(36, 78, 93);">
+
+            <!--footer-->
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <p>© 2023 GuglioIsStupid</p>
                 </div>
             </div>
         </div>
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        
-
-        <!--Footer-->
-        <footer class="footer">
-            <!--Draw a 2px gray border-->
-            <hr style="border-top: 2px solid rgb(36, 78, 93);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 text-center">
-                        <p>
-                            <span>© <a href="https://ilovefemboys.org" style="color: rgb(0, 38, 255)">ilovefemboys.org</a>, Made by GuglioIsStupid</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
     </body>
-
 </html>

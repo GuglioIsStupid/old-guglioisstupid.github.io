@@ -18,3 +18,8 @@ function GoToGithub() {
     // open github in new tab
     window.open("https://github.com/GuglioIsStupid");
 }
+
+function GoToIndex() {
+    // go to index.html
+    window.location.href = "../index.html";
+}

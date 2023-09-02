@@ -189,3 +189,13 @@ html {
     scrollbar-color: rgb(0, 115, 141) rgb(0, 51, 63);
 
 }
+
+.backButton button {
+    background-color: rgb(0, 115, 141);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s;
+    width: 100%;
+}

@@ -1,31 +1,107 @@
+<!DOCTYPE html>
+<meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+</meta>
+
+<!--Embeds for discord-->
+<title>GuglioIsStupid</title>
+<meta content="GuglioIsStupid" property="og:title">
+<meta content="About me" name="og:description">
+<meta content="#E084D6" data-react-helmet="true" name="theme-color">
+
 <html>
     <!--get bootstrap-->
     <link
     rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="../styles/sidebar.css" />
-    <!-- load sidebar.js -->
-    <script src="../js/sidebar.js"></script>
-     <!-- The overlay -->
-  <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-      >&times;</a
-    >
-    <div class="overlay-content">
-        <a href="main.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="../blog">Blog</a>
-      </div>
-    <!--Why does the above not get included in the nav?-->
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
 
-    <span onclick="openNav()">&#9776;</span>
-  </div>
+    <!--Create a nice layout (one page! No nav bar)-->
+    
+    <!--load index.css-->
+    <link rel="stylesheet" href="../styles/contact.css">
+    <!--load index.js-->
+    <script src="../js/contact.js"></script>
 
-  <!-- Use any element to open/show the overlay navigation menu -->
-  <span onclick="openNav()">
-    <!--CSS Menu button-->
-    <button class="openbtn">&#9776;</button>
-  </span>
+    <body>
+        <div class="backButton">
+            <button onclick="GoToIndex()">Back</button>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h1>
+                        GuglioIsStupid
+                    </h1>
+                    <h2>Contact Me</h2>
+                    <div id="discord">
+                        <div class="discordInfo">
+                            <h3>Discord</h3>
+                            <p>guglioisstupid</p>
+                            <button onclick="copyDiscord()">Copy</button>
+                        </div>
+                    </div>
+                    <div id="twitter">
+                        <div class="twitterInfo">
+                            <h3>Twitter</h3>
+                            <p>@GuglioIs2Stupid</p>
+                            <button onclick="GoToTwitter()">Go</button>
+                        </div>
+                    </div>
+                    <div id="github">
+                        <div class="githubInfo">
+                            <h3>Github</h3>
+                            <p>GuglioIsStupid</p>
+                            <button onclick="GoToGithub()">Go</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div id="miku">
+            <!-- load https://image.api.playstation.com/cdn/UP0177/CUSA04518_00/SM1XQ1raeyyh0TD39SteKi34Yk6mLIYH.jpg with the holyShitHatsuneMiku class -->
+            <div class = "container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h4>Miku Miku oo ee oo</h4>
+                        <script>
+                            // slowly rotate miku.h4 (sinelaw mmmm math 🤤🤤)
+                            setInterval(function() {
+                                document.getElementById("miku").style.transform = "rotate(" + Math.sin(Date.now() / 1000) * 10 + "deg)";
+                            }, 1);
+                        </script>
+                        <img src="https://image.api.playstation.com/cdn/UP0177/CUSA04518_00/SM1XQ1raeyyh0TD39SteKi34Yk6mLIYH.jpg" class="holyShitHatsuneMiku" alt="Holy shit, Hatsune Miku">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+
+        <!--Footer-->
+        <footer class="footer">
+            <!--Draw a 2px gray border-->
+            <hr style="border-top: 2px solid rgb(36, 78, 93);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <p>© 2023 GuglioIsStupid</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
 </html>
