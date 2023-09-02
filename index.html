@@ -78,21 +78,43 @@
                             }, 1);
                         </script>
                     </div>
+
+                    <br><br><br><br><br><br>
                 </div>
 
-                <div class="col-sm-4 text-center">
-                    <h3><a href="https://github.com/AGORI-Studios/Rit" target="_blank">Rit.</a></h3>
-                    <p>Rit. is a rhythm game I am working on. It is currently in early development. The game is supported by multiple systems such as Windows, MacOS, Linux, and Nintendo Switch.</p>
+
+                <div id="pro1">
+                    <div class="col-sm-4 text-center">
+                        <h3><a href="https://github.com/AGORI-Studios/Rit" target="_blank">Rit.</a></h3>
+                        <p>Rit. is a rhythm game I am working on. It is currently in early development. The game is supported by multiple systems such as Windows, MacOS, Linux, and Nintendo Switch.</p>
+                    </div>
                 </div>
-                <div class="col-sm-4 text-center">
-                    <h3>Guys Vs Gods</h3>
-                    <p>Guys Vs Gods is a game made for <a href="https://agori.dev" target="_blank">AGORI Studios</a>, it is a top-down pixel RPG game</p>
+                <div id="pro2">
+                    <div class="col-sm-4 text-center">
+                        <h3>Guys Vs Gods</h3>
+                        <p>Guys Vs Gods is a game made for <a href="https://agori.dev" target="_blank">AGORI Studios</a>, it is a top-down pixel RPG game. It is still in development.</p>
+                    </div>
                 </div>
-                <div class="col-sm-4 text-center">
-                    <h3><a href="https://github.com/VanillaEngineDevs/Vanilla-Engine" target="_blank">Vanilla Engine</a></h3>
-                    <p>Vanilla Engine is a FNF engine made in Lua built on <a href="https://github.com/HTV04/funkin-rewritten" target="_blank">Funkin' Rewritten</a>. It has recently released.</p>
+                <div id="pro3">
+                    <div class="col-sm-4 text-center">
+                        <h3><a href="https://github.com/VanillaEngineDevs/Vanilla-Engine" target="_blank">Vanilla Engine</a></h3>
+                        <p>Vanilla Engine is a FNF engine made in Lua built on <a href="https://github.com/HTV04/funkin-rewritten" target="_blank">Funkin' Rewritten</a>. It has recently released.</p>
+                    </div>
                 </div>
+
+                <script>
+                    // slightly sine each project by their id
+                    setInterval(function() {
+                        for (var i = 1; i < 4; i++) {
+                            var y = Math.sin(i + Date.now()/1000 * 2);    
+                            var pro = document.getElementById("pro" + i);
+                            pro.style.transform = "translateY(" + y*10 + "px)";
+                        }
+                    }, 1);
+                </script>
             </div>
+
+            <br><br><br><br><br><br><br><br><br>
 
             <!--border-->
             <hr style="border-top: 2px solid rgb(36, 78, 93);">
