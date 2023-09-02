@@ -155,7 +155,6 @@
         }
 
         .holyShitHatsuneMiku {
-            background-color: rgba(49, 239, 249, 1);
             color: rgb(0, 0, 0);
             padding: 20px;
             margin-top: 20px;
@@ -168,11 +167,25 @@
         }
 
         .holyShitHatsuneMiku:hover {
-            background-color: rgba(49, 239, 249, 1);
-            box-shadow: 5px 5px 10px 10px rgba(72, 255, 246, 0.2);
             width: 55%;
             height: 55%;
-            transform: rotate(1deg);
+            transition: 0.3s;
+        }
+
+        body {
+            background-color: rgb(40, 122, 135);
+            color: white;
+        }
+
+        .miku {
+            width: 100%;
+            height: 100%;
+            transition: 0.3s;
+        }
+
+        .miku:hover {
+            width: 105%;
+            height: 105%;
             transition: 0.3s;
         }
 
@@ -239,29 +252,28 @@
             <div class = "container">
                 <div class="row">
                     <div class="col-sm-12 text-center">
+                        <h4>Miku Miku oo ee oo</h4>
+                        <script>
+                            // slowly rotate miku.h4 (sinelaw and cosinlaw)
+                            setInterval(function() {
+                                document.getElementById("miku").style.transform = "rotate(" + Math.sin(Date.now() / 1000) * 10 + "deg)";
+                            }, 1);
+                        </script>
                         <img src="https://image.api.playstation.com/cdn/UP0177/CUSA04518_00/SM1XQ1raeyyh0TD39SteKi34Yk6mLIYH.jpg" class="holyShitHatsuneMiku" alt="Holy shit, Hatsune Miku">
                     </div>
                 </div>
             </div>
         </div>
 
-        <script>
-            // slowly rotate holyShitHatsuneMiku class left and right 
-            const time = 0;
-            
-
-
-        </script>
-
         <!--Footer-->
         <footer class="footer">
             <!--Draw a 2px gray border-->
-            <hr style="border-top: 2px solid rgb(204, 204, 204);">
+            <hr style="border-top: 2px solid rgb(36, 78, 93);">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 text-center">
                         <p>
-                            <span class="text-muted">© <a href="ilovefemboys.org">ilovefemboys.org</a>, Made by GuglioIsStupid</span>
+                            <span>© <a href="ilovefemboys.org" style="color: rgb(0, 38, 255)">ilovefemboys.org</a>, Made by GuglioIsStupid</span>
                         </p>
                     </div>
                 </div>
