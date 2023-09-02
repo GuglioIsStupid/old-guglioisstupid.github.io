@@ -154,6 +154,28 @@
             margin-bottom: 12px;
         }
 
+        .holyShitHatsuneMiku {
+            background-color: rgba(49, 239, 249, 1);
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            width: 50%;
+            height: 50%;
+            transform: rotate(0deg);
+            transition: 0.3s;
+        }
+
+        .holyShitHatsuneMiku:hover {
+            background-color: rgba(49, 239, 249, 1);
+            box-shadow: 5px 5px 10px 10px rgba(72, 255, 246, 0.2);
+            width: 55%;
+            height: 55%;
+            transform: rotate(1deg);
+            transition: 0.3s;
+        }
+
     </style>
 
     <script>
@@ -211,6 +233,40 @@
                 </div>
             </div>
         </div>
+
+        <div id="miku">
+            <!-- load https://image.api.playstation.com/cdn/UP0177/CUSA04518_00/SM1XQ1raeyyh0TD39SteKi34Yk6mLIYH.jpg with the holyShitHatsuneMiku class -->
+            <div class = "container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <img src="https://image.api.playstation.com/cdn/UP0177/CUSA04518_00/SM1XQ1raeyyh0TD39SteKi34Yk6mLIYH.jpg" class="holyShitHatsuneMiku" alt="Holy shit, Hatsune Miku">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // slowly rotate holyShitHatsuneMiku class left and right 
+            const time = 0;
+            
+
+
+        </script>
+
+        <!--Footer-->
+        <footer class="footer">
+            <!--Draw a 2px gray border-->
+            <hr style="border-top: 2px solid rgb(204, 204, 204);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <p>
+                            <span class="text-muted">© <a href="ilovefemboys.org">ilovefemboys.org</a>, Made by GuglioIsStupid</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 
 </html>
