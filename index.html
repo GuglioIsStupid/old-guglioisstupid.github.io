@@ -19,200 +19,10 @@
 
     <!--Create a nice layout (one page! No nav bar)-->
     
-    <style>
-        .discordInfo {
-            /* set to discord blurple */
-            background-color: rgb(114, 137, 218);
-            color: white;
-            padding: 20px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            transition: 0.3s;
-        }
-
-        .discordInfo:hover {
-            background-color: rgb(114, 137, 218, 0.5);
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-            transition: 0.3s;
-        }
-
-        .discordInfo button {
-            background-color: rgb(114, 137, 218);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px;
-            transition: 0.3s;
-            width: 100%;
-        }
-
-        .discordInfo button:hover {
-            background-color: rgb(114, 137, 218, 0.5);
-            transition: 0.3s;
-        }
-
-        .discordInfo h3 {
-            font-size: 30px;
-            margin-top: 0;
-            margin-bottom: 12px;
-        }
-
-        .discordInfo p {
-            margin-top: 0;
-            margin-bottom: 12px;
-        }
-
-        .copiedText {
-            color: rgb(8, 156, 0);
-            transition: 0.3s;
-        }
-
-        .twitterInfo {
-            /* set to twitter blue */
-            background-color: rgb(29, 161, 242);
-            color: white;
-            padding: 20px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            transition: 0.3s;
-        }
-
-        .twitterInfo:hover {
-            background-color: rgb(29, 161, 242, 0.5);
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-            transition: 0.3s;
-        }
-
-        .twitterInfo button {
-            background-color: rgb(29, 161, 242);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px;
-            transition: 0.3s;
-            width: 100%;
-        }
-
-        .twitterInfo button:hover {
-            background-color: rgb(29, 161, 242, 0.5);
-            transition: 0.3s;
-        }
-
-        .twitterInfo h3 {
-            font-size: 30px;
-            margin-top: 0;
-            margin-bottom: 12px;
-        }
-
-        .twitterInfo p {
-            margin-top: 0;
-            margin-bottom: 12px;
-        }
-
-        .githubInfo {
-            /* set to github black */
-            background-color: rgb(36, 41, 46);
-            color: white;
-            padding: 20px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            transition: 0.3s;
-        }
-
-        .githubInfo:hover {
-            background-color: rgb(36, 41, 46, 0.5);
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-            transition: 0.3s;
-        }
-
-        .githubInfo button {
-            background-color: rgb(36, 41, 46);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px;
-            transition: 0.3s;
-            width: 100%;
-        }
-
-        .githubInfo button:hover {
-            background-color: rgb(36, 41, 46, 0.5);
-            transition: 0.3s;
-        }
-
-        .githubInfo h3 {
-            font-size: 30px;
-            margin-top: 0;
-            margin-bottom: 12px;
-        }
-
-        .githubInfo p {
-            margin-top: 0;
-            margin-bottom: 12px;
-        }
-
-        .holyShitHatsuneMiku {
-            color: rgb(0, 0, 0);
-            padding: 20px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            width: 50%;
-            height: 50%;
-            transform: rotate(0deg);
-            transition: 0.3s;
-        }
-
-        .holyShitHatsuneMiku:hover {
-            width: 55%;
-            height: 55%;
-            transition: 0.3s;
-        }
-
-        body {
-            background-color: rgb(40, 122, 135);
-            color: white;
-        }
-
-        .miku {
-            width: 100%;
-            height: 100%;
-            transition: 0.3s;
-        }
-
-        .miku:hover {
-            width: 105%;
-            height: 105%;
-            transition: 0.3s;
-        }
-
-    </style>
-
-    <script>
-        function copyDiscord() {
-            // Set "guglioisstupid" to the clipboard
-            navigator.clipboard.writeText("guglioisstupid");
-            // change text to "Copied!" , then back to "Discord"
-            document.getElementById("discord").innerHTML = "<div class=\"discordInfo\"><h3>Copied!</h3><p>guglioisstupid</p><button onclick=\"copyDiscord()\">Copy</button></div>";
-            setTimeout(function() {
-                document.getElementById("discord").innerHTML = "<div class=\"discordInfo\"><h3>Discord</h3><p>guglioisstupid</p><button onclick=\"copyDiscord()\">Copy</button></div>";
-
-            }, 1000);
-        }
-
-        function GoToTwitter() {
-            // open twitter in new tab
-            window.open("https://twitter.com/GuglioIs2Stupid");
-        }
-
-        function GoToGithub() {
-            // open github in new tab
-            window.open("https://github.com/GuglioIsStupid");
-        }
-    </script>
+    <!--load index.css-->
+    <link rel="stylesheet" href="index.css">
+    <!--load index.js-->
+    <script src="index.js"></script>
 
     <body>
         <div class="container">
@@ -232,7 +42,7 @@
                     <div id="twitter">
                         <div class="twitterInfo">
                             <h3>Twitter</h3>
-                            <p>@guglioisstupid</p>
+                            <p>@GuglioIs2Stupid</p>
                             <button onclick="GoToTwitter()">Go</button>
                         </div>
                     </div>
@@ -247,6 +57,9 @@
             </div>
         </div>
 
+        <br>
+        <br>
+
         <div id="miku">
             <!-- load https://image.api.playstation.com/cdn/UP0177/CUSA04518_00/SM1XQ1raeyyh0TD39SteKi34Yk6mLIYH.jpg with the holyShitHatsuneMiku class -->
             <div class = "container">
@@ -254,7 +67,7 @@
                     <div class="col-sm-12 text-center">
                         <h4>Miku Miku oo ee oo</h4>
                         <script>
-                            // slowly rotate miku.h4 (sinelaw and cosinlaw)
+                            // slowly rotate miku.h4 (sinelaw mmmm math 🤤🤤)
                             setInterval(function() {
                                 document.getElementById("miku").style.transform = "rotate(" + Math.sin(Date.now() / 1000) * 10 + "deg)";
                             }, 1);
@@ -264,6 +77,16 @@
                 </div>
             </div>
         </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
 
         <!--Footer-->
         <footer class="footer">
