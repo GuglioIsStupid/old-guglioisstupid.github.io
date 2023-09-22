@@ -20,6 +20,8 @@
     <link
     rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <!--js query ease-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <style>
         /* Black bg */
@@ -36,9 +38,30 @@
                 <div class="col-sm-12 text-center">
                     <h2>Something is wrong...</h2>
                     <img src="https://http.cat/404" alt="404 cat">
-                </div>
+            
+                <br><br>
 
-            <hr style="border-top: 2px solid rgb(36, 78, 93);">                
+                <!--Sad spongebob bouncing left and right (with a little hop) https://media.discordapp.net/attachments/783856131189112842/1154921329045286982/image.png-->
+                    <!--needa code this itn-->
+                <script>
+                    time = 0;
+
+                    // use sin and cos to make him jump left and right
+
+                    setInterval(function() {
+                        time += 0.1;
+                        document.getElementById("spongebob").style.left = Math.sin(time) * 100 + "px";
+                        document.getElementById("spongebob").style.transform = "rotate(" + Math.sin(time) * 10 + "deg)";
+                        document.getElementById("spongebob").style.transform = "rotate(" + Math.cos(time) * 10 + "deg)";
+                    }, 10);
+                </script>
+
+                <!--Spongebob-->
+                <img src="https://media.discordapp.net/attachments/783856131189112842/1154921329045286982/image.png" id="spongebob" alt="Spongebob" style="position: relative; left: 0px; top: 0px;">
+
+            </div>
+
+            <hr style="border-top: 2px solid rgb(36, 78, 93);">  
 
             <br><br><br><br><br><br><br><br><br><br><br>
 
