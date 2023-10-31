@@ -1,0 +1,59 @@
+body {
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(21, 3, 56);
+}
+
+.Guglio {
+    width: fit-content;
+    padding: 5px;
+    margin: auto;
+    background-color: #1c162b;
+    margin-top: 5%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.profile {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.author {
+    color: #b4b4b4;
+    font-size: 25px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.info {
+    color: #b4b4b4;
+    font-size: 15px
+}
+
+.social {
+    background-color: #1c162b;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+    margin-top: 15px;
+}
+
+.title {
+    vertical-align: middle;
+    display: inline;
+    color: #b4b4b4;
+}
+
+.link {
+    display: inline;
+    color: white;
+    font-weight: 100;
+    color: #bdace7;
+    background-color: #1e192c;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 15px;
+    top: 5px;
+}
