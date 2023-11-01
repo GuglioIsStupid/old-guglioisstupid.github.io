@@ -24,8 +24,7 @@ body {
 
 .Guglio:hover {
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
-    scale: 1.05;
-    rotate: 1deg;
+    scale: 1.025;
     transition: 0.5s;
 }
 
