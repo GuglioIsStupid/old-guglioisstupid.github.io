@@ -81,6 +81,15 @@ body {
     margin: 5px;
 }
 
+.link:hover {
+    background-color: #1c162b;
+    transition: 0.5s;
+}
+
+.link:not(:hover) {
+    transition: 0.5s;
+}
+
 .Portfolio {
     width: fit-content;
     padding: 5px;
