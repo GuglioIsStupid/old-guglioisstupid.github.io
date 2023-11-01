@@ -99,3 +99,73 @@ body {
     border-radius: 5px;
     padding: 15px;
 }
+
+.Portfolio:hover {
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+    scale: 1.025;
+    transition: 0.5s;
+}
+
+.Portfolio:not(:hover) {
+    transition: 0.5s;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    scale: 1;
+    rotate: 0deg;
+}
+
+.projects {
+    color: #b4b4b4;
+    font-size: 25px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.project {
+    color: #b4b4b4;
+    font-size: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    margin: 5px;
+}
+
+.project_title {
+    vertical-align: middle;
+    display: inline;
+    color: #b4b4b4;
+    border-radius: 5px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.project_description {
+    display: inline;
+    color: white;
+    color: #b4b4b4;
+    background-color: #15111f;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+    margin: 5px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.project_link {
+    display: inline;
+    color: white;
+    font-weight: 100;
+    color: #bdace7;
+    background-color: #15111f;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+    margin: 5px;
+    font-size: 15px;
+}
+
+.portfolio_img {
+    width: 25%;
+    height: 25%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+    top: 25px;
+}
