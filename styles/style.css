@@ -17,6 +17,26 @@ body {
     padding: 15px;
 }
 
+.Guglio:is(img, p) {
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.Guglio:hover {
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+    scale: 1.05;
+    rotate: 1deg;
+    transition: 0.5s;
+}
+
+/* Ease back when mouse is not hovering */
+.Guglio:not(:hover) {
+    transition: 0.5s;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    scale: 1;
+    rotate: 0deg;
+}
+
 .profile {
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
@@ -44,6 +64,9 @@ body {
     vertical-align: middle;
     display: inline;
     color: #b4b4b4;
+    border-radius: 5px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    text-align: left;
 }
 
 .link {
@@ -51,9 +74,20 @@ body {
     color: white;
     font-weight: 100;
     color: #bdace7;
-    background-color: #1e192c;
+    background-color: #15111f;
     padding: 8px;
     border-radius: 5px;
-    margin-top: 15px;
-    top: 5px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+    margin: 5px;
+}
+
+.Portfolio {
+    width: fit-content;
+    padding: 5px;
+    margin: auto;
+    background-color: #1c162b;
+    margin-top: 5%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 15px;
 }
