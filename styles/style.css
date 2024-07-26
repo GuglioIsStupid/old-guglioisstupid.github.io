@@ -60,12 +60,12 @@ body {
 }
 
 .title {
-    vertical-align: middle;
     display: inline;
     color: #b4b4b4;
     border-radius: 5px;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     text-align: left;
+    bottom: 50px;
 }
 
 .link {
